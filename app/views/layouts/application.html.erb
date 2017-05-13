@@ -1,7 +1,8 @@
+<% provide(:description, "Uniblah! - A twitter Clone") %>
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Uniblah</title>
+    <title><%= yield(:description) %> | <%= yield(:title) %></title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
