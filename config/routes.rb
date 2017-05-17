@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # get 'pages/index'
 
   get '/home', to: 'pages#home'
-  get '/profile', to: 'pages#profile'
+  get '/user/:id' => 'pages#profile'
   get '/explore', to: 'pages#explore'
 
   get '/help', to: 'static_pages#help'
