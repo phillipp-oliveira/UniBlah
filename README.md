@@ -1,3 +1,9 @@
+[![Code Climate](https://codeclimate.com/github/phillipp-oliveira/UniBlah/badges/gpa.svg)](https://codeclimate.com/github/phillipp-oliveira/UniBlah)
+[![Test Coverage](https://codeclimate.com/github/phillipp-oliveira/UniBlah/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
+
+
+#README
+
 ## Staging
 
 [http://uniblah-staging.herokuapp.com](http://uniblah-staging.herokuapp.com)
@@ -6,7 +12,9 @@
 ## Versions
 
 Ruby -> 2.4.1
+
 Rails -> 5.0.1
+
 PostgreSQL -> 9.5.6
 
 
