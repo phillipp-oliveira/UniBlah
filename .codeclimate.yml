@@ -43,4 +43,4 @@ exclude_paths:
 - db/
 - test/
 - vendor/
-- "coverage/assets/0.10.0/application.css"
+- "coverage/assets/0.10.1/application.css"
