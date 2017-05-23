@@ -1,12 +1,74 @@
-<div class="center jumbotron">
+<% if !user_signed_in? %>
+
+<style type="text/css">
+  body{
+    background: 
+      linear-gradient(
+      rgba(0,0,0, 0.7),
+      rgba(0,0,0, 0.7)),
+      url('bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  h1{
+    color: white;
+    text-align: left;
+  }
+  .container-index{
+    margin-right: 15%;
+    margin-left: 15%;
+    font-weight: bold;
+  }
+  .text{
+    color: white;
+    font-weight: 300;
+    font-size: 150%;
+  }
+  .sign-in{
+    float: right;
+    width: 350px;
+    height: 150px;
+  }
+  .sign-up{
+    float: right;
+    width: 350px;
+    height: 250px;
+  }
+</style>
+<div class="container-index row">
+  <div class="col-sm-6">
+    <h1>Bem-vind@ ao UniBlah!</h1>
+    <p class="text">
+      Compartilhe suas ideias e pensamentos aqui ;)
+    </p>
+  </div>
+  <div class="col-sm-6">
+    <div class="sign-in panel"> 
+      login
+    </div>
+    <div class="sign-up panel"> 
+      <%= link_to('Registrar', new_user_registration_path, class: "btn btn-lg btn-primary") %>
+    </div>
+  </div>
+</div>
+
+
+<% else %>
+
+signed
+<% end %>
+
+<!-- <div class="center jumbotron">
   <h1>Bem-vind@ ao UniBlah!</h1>
 
   <h2>
     Título impactante!!!
   </h2>
 
-  <%= link_to "Registrar", '#', class: "btn btn-lg btn-primary" %>
+  
 </div>
-
 <%= link_to image_tag("logo.png", alt: "logo"),
             '#' %>
+ -->
