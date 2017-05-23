@@ -1,8 +1,8 @@
 [![Code Climate](https://codeclimate.com/github/phillipp-oliveira/UniBlah/badges/gpa.svg)](https://codeclimate.com/github/phillipp-oliveira/UniBlah)
-[![Test Coverage](https://codeclimate.com/github/phillipp-oliveira/UniBlah/badges/coverage.svg)](https://codeclimate.com/github/codeclimate/codeclimate/coverage)
+[![Test Coverage](https://codeclimate.com/github/phillipp-oliveira/UniBlah/badges/coverage.svg)](https://codeclimate.com/github/phillipp-oliveira/UniBlah/coverage)
 
 
-#README
+# README
 
 ## Staging
 
