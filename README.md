@@ -1,5 +1,6 @@
 [![Code Climate](https://codeclimate.com/github/phillipp-oliveira/UniBlah/badges/gpa.svg)](https://codeclimate.com/github/phillipp-oliveira/UniBlah)
 [![Test Coverage](https://codeclimate.com/github/phillipp-oliveira/UniBlah/badges/coverage.svg)](https://codeclimate.com/github/phillipp-oliveira/UniBlah/coverage)
+[![Issue Count](https://codeclimate.com/github/phillipp-oliveira/UniBlah/badges/issue_count.svg)](https://codeclimate.com/github/phillipp-oliveira/UniBlah)
 
 
 # README
