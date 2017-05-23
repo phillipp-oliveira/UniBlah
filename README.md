@@ -3,9 +3,13 @@
 
 
 ##Versions
+
 Ruby -> 2.4.1
+
 Rails -> 5.0.1
+
 PostgreSQL -> 9.5.6
+
 
 ## Getting started
 
