@@ -12,9 +12,11 @@
 	to { transform: scale(1); }
 }
 
-.titulo__home h1, p{
-	text-align: center;
-	color: $white;
+.titulo__home {
+	h1, p{
+		text-align: center;
+		color: $white;
+	}
 }
 
 .home {
