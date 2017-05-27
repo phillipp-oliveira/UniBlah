@@ -1,9 +1,22 @@
 /* mixins */
 
-$gray-light: #777;
+
+/* Variables */ 
+
+$gray-light: #ecf0f1;
+$gray-medium: #bdc3c7;
+$gray-dark: #7f8c8d;
+$white: #ffffff;
+$standard: #1b3572;
+$standard-hover: #142958;
+$radius: 5px;
+$mq-desktop: "(min-width: 980px)";
 
 /* universal */
 
+.btn-uniblah {
+  
+}
 
 section {
   overflow: auto;

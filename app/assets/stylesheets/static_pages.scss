@@ -1,3 +1,51 @@
 // Place all the styles related to the StaticPages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@keyframes scale {
+	from { transform: scale(0); }
+	to { transform: scale(1); }
+}
+
+@-webkit-keyframes scale {
+	from { transform: scale(0); }
+	to { transform: scale(1); }
+}
+
+.titulo__home h1, p{
+	text-align: center;
+	color: $white;
+}
+
+.home {
+	.btn-uniblah {
+		width: 100%;
+		margin: 1em 0;
+	}
+
+	@media #{$mq-desktop} {
+		.btn-uniblah {
+			width: 200px;
+		}
+	}
+}
+
+.titulo__home h1{
+	-webkit-animation-name: scale;
+	-webkit-animation-duration: 2s;
+}
+
+.btn-uniblah {
+	background-color: $standard;
+	color: #fff;
+	margin: 0 auto;
+
+	&:hover {
+		background-color: $standard-hover;
+		color: $gray-light;
+	}
+}
+
+.sign-in, .sign-up {
+	text-align: center;
+}

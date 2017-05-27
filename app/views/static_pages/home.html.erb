@@ -12,10 +12,6 @@
     -o-background-size: cover;
     background-size: cover;
   }
-  h1{
-    color: white;
-    text-align: left;
-  }
   .container-index{
     margin-right: 15%;
     margin-left: 15%;
@@ -26,30 +22,22 @@
     font-weight: 300;
     font-size: 150%;
   }
-  .sign-in{
-    float: right;
-    width: 350px;
-    height: 150px;
-  }
-  .sign-up{
-    float: right;
-    width: 350px;
-    height: 250px;
-  }
+
 </style>
-<div class="container-index row">
-  <div class="col-sm-6">
-    <h1>Bem-vind@ ao UniBlah!</h1>
+
+<div class="container-index row home">
+  <div class="col-md-12 titulo__home">
+    <h1>UniBlah!</h1>
     <p class="text">
-      Compartilhe suas ideias e pensamentos aqui ;)
+      Compartilhe suas ideias e pensamentos aqui
     </p>
   </div>
-  <div class="col-sm-6">
-    <div class="sign-in panel"> 
-      login
+  <div class="col-md-12">
+    <div class="sign-in col-md-6 col-sm-12"> 
+      <%= link_to('Entrar', new_user_session_path, class: "btn btn-lg btn-uniblah") %> 
     </div>
-    <div class="sign-up panel"> 
-      <%= link_to('Registrar', new_user_registration_path, class: "btn btn-lg btn-primary") %>
+    <div class="sign-up col-md-6 col-sm-12"> 
+      <%= link_to('Registrar', new_user_registration_path, class: "btn btn-lg btn-uniblah") %>
     </div>
   </div>
 </div>
