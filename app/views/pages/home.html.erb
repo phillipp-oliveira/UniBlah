@@ -17,8 +17,15 @@
             <img src="http://alexeitruhin.github.io/images/avatar-br.png" width="50px" height="50px">
           </div>
           <div class="col-sm-11">
-            <p class="post-title"><%= @post.user.username %> - <%= time_ago_in_words(@post.created_at) %></p>
-            <p class="post-content"><%= @post.content %></p>
+            <p class="post-title">
+              <span class="post-owner">
+                <%= @post.user.username %>
+              </span>
+              <span class="post-create-date">
+                - <%= time_ago_in_words(@post.created_at) %>
+              </span>
+            </p>
+            <p class="post-content"><%= @post.content %>
           </div>
           <div class="col-sm-12">
             <p class="post-links">links</p>
