@@ -17,15 +17,15 @@
           <div class="col-sm-11">
             <p class="post-title">
               <span class="post-owner">
-                <%= @post.user.username %>
+                <%= @post.user.name %>
               </span>
-              <span class="post-create-date">
-                - <%= time_ago_in_words(@post.created_at) %>
+              <span class="post-create-date" title="<%= l(@post.created_at, :format => "%d de %B de %Y as %H:%M") %>">
+                @<%= @post.user.username %> - <%= time_ago_in_words(@post.created_at) %>
               </span>
             </p>
             <p class="post-content"><%= @post.content %></p>
           </div>
-          <div class="col-sm-12">
+          <div class="col-sm-11 col-sm-offset-1">
             <p class="post-links">
               <span class="glyphicon glyphicon-comment glyphi-links" aria-hidden="true"></span>
               <span class="glyphicon glyphicon-retweet glyphi-links" aria-hidden="true"></span>

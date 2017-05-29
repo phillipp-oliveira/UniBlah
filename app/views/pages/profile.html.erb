@@ -1,7 +1,7 @@
 <div class="row">
   <div class="col-xs-12">
     <div class="jumbotron">
-      <h1><%= @username %></h1>
+      <h2>@<%= @username %></h2>
     </div>
   </div>
 </div>
@@ -15,8 +15,6 @@
   </div>
   <div class="col-xs-6">
     <%= render '/components/post_form' %>
-    <br><br>
-
     <% for @post in @posts %>
       <div class="panel panel-default post-panel">
         <div class="panel-body row">
@@ -24,11 +22,23 @@
             <img src="http://alexeitruhin.github.io/images/avatar-br.png" width="50px" height="50px">
           </div>
           <div class="col-sm-11">
-            <p class="post-title"><%= @post.user.username %> - <%= time_ago_in_words(@post.created_at) %></p>
+            <p class="post-title">
+              <span class="post-owner">
+                <%= @post.user.name %>
+              </span>
+              <span class="post-create-date" title="<%= l(@post.created_at, :format => "%d de %B de %Y as %H:%M") %>">
+                @<%= @post.user.username %> - <%= time_ago_in_words(@post.created_at) %>
+              </span>
+            </p>
             <p class="post-content"><%= @post.content %></p>
           </div>
-          <div class="col-sm-12">
-            <p class="post-links">links</p>
+          <div class="col-sm-11 col-sm-offset-1">
+            <p class="post-links">
+              <span class="glyphicon glyphicon-comment glyphi-links" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-retweet glyphi-links" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-heart glyphi-links" aria-hidden="true"></span>
+              <span class="glyphicon glyphicon-option-horizontal glyphi-links" aria-hidden="true"></span>
+            </p>
           </div>
         </div>
       </div>
