@@ -22,13 +22,23 @@ body{
 }
 .navbar {
   background-color: white;
+  margin-bottom: 0px;
 }
 .navbar-brand{
   position: absolute;
   left: 50%;
 }
+.dropdown-avatar{
+  padding-top: 10px !important;
+}
 .post-panel{
   margin-top: -21px;
+}
+.post-panel:hover{
+  background-color: #f5f8fa;
+}
+.post-form-panel{
+  background-color: #EBF4FB;
 }
 .post-title{
   text-align: left;
@@ -39,7 +49,8 @@ body{
   margin-left: 15px;
 }
 .post-links{
-
+  margin-left: 15px;
+  margin-bottom: 0px;
 }
 .post-owner{
   color: black;
@@ -47,4 +58,53 @@ body{
 }
 .post-create-date{
   opacity: 0.65;
+}
+.glyphi-links{
+  opacity: 0.5;
+  // font-size: 120%;
+  margin-right: 60px;
+}
+.glyphi-links:hover{
+  opacity: 1;
+}
+.rounded-img{
+  border-radius: 5px;
+}
+.avatar-size-icon{
+  width: 25px;
+  height: 25px;
+}
+.avatar-size-small{
+  width: 35px;
+  height: 35px;
+}
+.avatar-size-medium{
+  width: 48px;
+  height: 48px;
+}
+.new-post-box{
+  margin-left: 10px;
+}
+.new-post-submit{
+  float: right;
+}
+.link-top{
+  opacity: 0.7;
+}
+.profile-panel-bg{
+  background-size: 100%;
+  height: 95px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  background-position: 0 50%;
+  width: 100%;
+  padding: 0 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.profile-info{
+  padding-left: 30px;
+}
+.panel-footer{
+  background-color: white;
 }

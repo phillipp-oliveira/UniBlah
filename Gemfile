@@ -18,6 +18,7 @@ gem 'jquery-rails',            '4.1.1'
 gem 'turbolinks',              '5.0.1'
 gem 'jbuilder',                '2.4.1'
 gem 'pg',   '0.18.4'
+gem 'devise-i18n'
 
 group :development, :test do
   gem 'pry-byebug'

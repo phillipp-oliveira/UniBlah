@@ -1,3 +1,4 @@
+<a name="top"></a>
 <nav class="navbar navbar-default">
   <div class="container-fluid container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -10,13 +11,13 @@
       </button>
     </div>
 
-    <img class="navbar-brand" src="http://alexeitruhin.github.io/images/avatar-br.png">
+    <img class="navbar-brand rounded-img" src="http://alexeitruhin.github.io/images/avatar-br.png">
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li ><%= link_to('Home', home_path) %></li>
-        <li><%= link_to 'Explorar', explore_path %></li>
+        <li ><%= link_to('<span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home'.html_safe, root_path) %></li>
+        <li><%= link_to '<span class="glyphicon glyphicon-flash" aria-hidden="true"></span> Explorar'.html_safe, explore_path %></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
@@ -27,7 +28,8 @@
           </form>
         </li>
         <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="http://alexeitruhin.github.io/images/avatar-br.png" width="25px" height="25px"><span class="caret"></span>
+          <a href="#" class="dropdown-toggle dropdown-avatar" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img class="rounded-img" src="http://alexeitruhin.github.io/images/avatar-br.png" width="25px" height="25px"><span class="caret"></span>
           </a>
           <ul class="dropdown-menu">
             <li><a href="/user/<%= current_user.username %>">Perfil</a></li>
@@ -39,7 +41,7 @@
             <li><%= link_to('Sair', destroy_user_session_path, :method => :delete) %></li> 
           </ul>
         </li>
-        <li type="button" class="btn btn-primary navbar-btn">Tweetar</li>
+        <li type="button" class="btn btn-primary navbar-btn">Postar</li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

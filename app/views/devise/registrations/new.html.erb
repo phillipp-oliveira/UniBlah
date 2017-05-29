@@ -2,11 +2,16 @@
   <%= devise_error_messages! %>
 
 <div class="formBox">
-  <h2>Sign up</h2>
+  <h2>Cadastre-se</h2>
   
   <div class="field form-group">
+    <%= f.label :name %><br>
+    <%= f.text_field :name, class: "form-control", autofocus: true %>
+  </div>
+
+  <div class="field form-group">
       <%= f.label :username %><br>
-      <%= f.text_field :username, class: "form-control", autofocus: true %>
+      <%= f.text_field :username, class: "form-control" %>
     </div>
     <div class="field form-group">
       <%= f.label :email %><br />
@@ -27,7 +32,7 @@
     </div>
 
     <div class="actions form-group">
-      <%= f.submit "Sign up", class: "btn btn-uniblah " %>
+      <%= f.submit "Registrar", class: "btn btn-uniblah" %>
     </div>
   <% end %>
 

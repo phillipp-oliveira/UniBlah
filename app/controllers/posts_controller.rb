@@ -10,9 +10,9 @@ class PostsController < ApplicationController
 
     respond_to do |f|
       if(@post.save)
-        f.html { redirect_to "", notice: "Post criado com sucesso!"}
+        f.html { redirect_to home_path, notice: "Post criado com sucesso!"}
       else
-        f.html {redirect_to "", notice: "Erro ao criar o post." }
+        f.html {redirect_to home_path, notice: "Erro ao criar o post" }
       end
     end
   end
