@@ -30,6 +30,9 @@ body{
 .post-panel{
   margin-top: -21px;
 }
+.post-panel:hover{
+  background-color: #f5f8fa;
+}
 .post-title{
   text-align: left;
   margin-left: 15px;
@@ -47,4 +50,36 @@ body{
 }
 .post-create-date{
   opacity: 0.65;
+}
+.glyphi-links{
+  opacity: 0.5;
+  // font-size: 120%;
+  margin-right: 60px;
+}
+.glyphi-links:hover{
+  opacity: 1;
+}
+.rounded-img{
+  border-radius: 5px;
+}
+.avatar-size-icon{
+  width: 25px;
+  height: 25px;
+}
+.avatar-size-small{
+  width: 35px;
+  height: 35px;
+}
+.avatar-size-medium{
+  width: 48px;
+  height: 48px;
+}
+.new-post-box{
+  margin-left: 10px;
+}
+.new-post-submit{
+  float: right;
+}
+.link-top{
+  opacity: 0.7;
 }
