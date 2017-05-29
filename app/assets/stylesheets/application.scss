@@ -22,10 +22,14 @@ body{
 }
 .navbar {
   background-color: white;
+  margin-bottom: 0px;
 }
 .navbar-brand{
   position: absolute;
   left: 50%;
+}
+.dropdown-avatar{
+  padding-top: 10px !important;
 }
 .post-panel{
   margin-top: -21px;
@@ -89,13 +93,18 @@ body{
 }
 .profile-panel-bg{
   background-size: 100%;
-  border-bottom: 1px solid #e6ecf0;
   height: 95px;
   border-top-left-radius: inherit;
   border-top-right-radius: inherit;
   background-position: 0 50%;
   width: 100%;
-  padding: 0 1px;
-  margin-left: -1px;
-  margin-top: -1px;
+  padding: 0 0px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.profile-info{
+  padding-left: 30px;
+}
+.panel-footer{
+  background-color: white;
 }
