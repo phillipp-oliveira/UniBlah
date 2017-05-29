@@ -7,9 +7,11 @@
       <%= form_for(@newPost) do |f| %>
         <center>
           <div class="field new-post-box">
-            <%= f.text_field :content, autofocus: true, class: "form-control" %>
+            <%= f.text_field :content, autofocus: true, class: "form-control", autocomplete: "off" %>
             <span type="button" class="new-post-submit btn btn-submit">
-              <%= f.submit "Postar", class: "btn btn-primary" %>
+              <%= button_tag( :class => "btn btn-primary") do %>
+                <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Postar
+              <% end %>
             </span>
           </div>
         </center>
