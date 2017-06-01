@@ -5,4 +5,5 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
          has_many :posts
+  validates :email, format: { with: /\b[A-Z0-9._%a-z\-]+@uninove\.edu.br\z/, message: "Apenas e-mails @uninove.edu.br podem se registrar." }
 end

@@ -3,13 +3,14 @@ class PagesController < ApplicationController
   end
 
   def home
-    @posts = Post.all
+    @posts = Post.all.where("user_id = ?", current_user.id)
     @newPost = Post.new
   end
 
   def profile
     if (User.find_by_username(params[:id]))
       @username = params[:id]
+      @user = User.find_by_username(params[:id])
     else
       redirect_to root_path, :notice => "Usuário não encontrado!"
     end
