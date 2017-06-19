@@ -46,19 +46,22 @@
 	}
 }
 
-.titulo__home h1{
+.titulo__home img{
 	-webkit-animation-name: scale;
-	-webkit-animation-duration: 2s;
+	-webkit-animation-duration: 1s;
 }
 
 .btn-uniblah {
 	background-color: $standard;
 	color: #fff;
 	margin: 0 auto;
+	border-radius: 0;
+	transition: .4s;
 
 	&:hover {
 		background-color: $standard-hover;
 		color: $gray-light;
+		transition: .2s background-color ease-out;
 	}
 }
 

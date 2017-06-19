@@ -1,7 +1,7 @@
 {
   "MiniTest": {
     "coverage": {
-      "/home/phillipp/phillipp/uninove/UniBlah/test/controllers/static_pages_controller_test.rb": [
+      "/home/rafaelnai/Documentos/UniBlah/test/controllers/static_pages_controller_test.rb": [
         1,
         null,
         1,
@@ -33,7 +33,7 @@
         null,
         null
       ],
-      "/home/phillipp/phillipp/uninove/UniBlah/test/integration/site_layout_test.rb": [
+      "/home/rafaelnai/Documentos/UniBlah/test/integration/site_layout_test.rb": [
         1,
         null,
         1,
@@ -48,7 +48,7 @@
         null,
         null
       ],
-      "/home/phillipp/phillipp/uninove/UniBlah/test/models/post_test.rb": [
+      "/home/rafaelnai/Documentos/UniBlah/test/models/post_test.rb": [
         1,
         null,
         1,
@@ -57,7 +57,7 @@
         null,
         null
       ],
-      "/home/phillipp/phillipp/uninove/UniBlah/test/models/user_test.rb": [
+      "/home/rafaelnai/Documentos/UniBlah/test/models/user_test.rb": [
         1,
         null,
         1,
@@ -66,12 +66,12 @@
         null,
         null
       ],
-      "/home/phillipp/phillipp/uninove/UniBlah/app/models/post.rb": [
+      "/home/rafaelnai/Documentos/UniBlah/app/models/post.rb": [
         1,
         1,
         1,
         1,
-        3,
+        4,
         null
       ],
       "/home/phillipp/phillipp/uninove/UniBlah/app/controllers/static_pages_controller.rb": [
@@ -89,7 +89,7 @@
         null,
         null
       ],
-      "/home/phillipp/phillipp/uninove/UniBlah/app/controllers/application_controller.rb": [
+      "/home/rafaelnai/Documentos/UniBlah/app/controllers/application_controller.rb": [
         1,
         1,
         1,
