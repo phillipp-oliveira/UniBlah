@@ -1,6 +1,12 @@
 ---
 pt-BR:
   activerecord:
+    models: 
+      user:
+    attributes:
+      user:
+        name: "Nome"
+        username: "Usuário"
     errors:
       messages:
         record_invalid: 'A validação falhou: %{errors}'
