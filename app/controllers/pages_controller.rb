@@ -17,6 +17,8 @@ class PagesController < ApplicationController
 
     @posts = Post.all.where("user_id = ?", User.find_by_username(params[:id]).id)
     @newPost = Post.new
+
+    @fiveUsers = User.all.first(5)
   end
 
   def explore
